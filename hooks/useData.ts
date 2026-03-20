@@ -10,6 +10,12 @@ export function useData(orgId?: string) {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
+        // Al cambiar de organización o cerrar sesión, limpiamos los datos anteriores
+        setProducts([]);
+        setSales([]);
+        setReceivables([]);
+        setClients([]);
+
         if (orgId) {
             fetchData();
         } else {
