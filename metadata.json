@@ -1,0 +1,7 @@
+{
+  "name": "IM App",
+  "description": "A comprehensive tire import and sales management system (POS) with inventory tracking, accounts receivable management, and business analytics dashboards.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
